@@ -1,5 +1,5 @@
 {
-  "name": "job-scheduler",
+  "name": "@brewery/parse-job-scheduler",
   "version": "1.0.0",
   "description": "Parse server jobs scheduler",
   "main": "index.js",
