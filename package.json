@@ -1,0 +1,15 @@
+{
+  "name": "job-scheduler",
+  "version": "1.0.0",
+  "description": "Parse server jobs scheduler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "parse-server",
+    "jobs"
+  ],
+  "author": "Ronald DC",
+  "license": "MIT"
+}
