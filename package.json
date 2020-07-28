@@ -11,5 +11,12 @@
     "jobs"
   ],
   "author": "Ronald DC",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cron": "^1.8.2",
+    "moment": "^2.27.0",
+    "parse": "^2.15.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  }
 }

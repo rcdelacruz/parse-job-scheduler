@@ -8,11 +8,15 @@ const PARSE_TIMEZONE = 'UTC'
 
 let cronJobs = {}
 
-// Initialize Parse
-const initialize = (parse) => {
-	this.Parse.serverURL = parse.serverURL;
-	this.Parse.initialize(process.applicationId, null, parse.masterKey);
+/**
+ * Initialize a Parse instance
+ * @param {Parse} parse The Parse Object
+ */
+const init = (parse) => {
+	Parse.serverURL = parse.serverURL;
+	Parse.initialize(parse.appId, null, parse.masterKey);
 }
+
 /**
  * Parse job schedule object
  * @typedef {Object} _JobSchedule
@@ -238,9 +242,9 @@ const performJob = async (jobName, params) => {
 	}
 }
 
-module.exports = { 
-	initialize, 
-	recreateSchedule, 
-	destroySchedule, 
-	recreateJobSchedule 
+module.exports = {
+	init,
+	recreateSchedule,
+	destroySchedule,
+	recreateJobSchedule
 }
