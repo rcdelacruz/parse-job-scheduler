@@ -16,7 +16,7 @@ $ npm install --save @brewery/parse-job-scheduler
 
 ```js
 // Import the library
-const JobsScheduler = require('parse-jobs-scheduler')
+const JobsScheduler = require('@brewery/parse-job-scheduler')
 
 // Initialize a Parse instance
 JobsScheduler.init({
